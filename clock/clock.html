@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.<span>0</span>">
+    <title>clock</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{height: 100vh;
+            width: 100vw;
+            background: url(mountain.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+         .time{
+            height: 100vh;
+            display: flex;
+            font-size: 3rem;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 100px;
+        }
+        .clock{
+            display: flex;
+            gap: 50px;
+            font-size: 3rem;
+            justify-content: center;
+            align-items: center;
+               
+        }
+        .hour,.min,.sec,.date,.month{
+            
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+<div class="time">Time Clock
+    <div class="clock">
+        <div class="hour"><span id="hr">0</span><br>
+            Hour
+        </div>
+        
+        <div class="min"><span id="min">0</span> <br>min</div>
+       
+        <div class="sec"><span id="sec">0</span> <br>sec</div>
+       
+        <div class="date"><span id="date">0</span> <br>date</div>
+        <div class="month"><span id="month">0</span><br>Month</div>
+    </div>
+</div>    
+   </div> 
+   <script src="clock.js"></script>
+</body>
+</html>

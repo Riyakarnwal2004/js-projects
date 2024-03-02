@@ -25,10 +25,8 @@ masterplay.addEventListener('click',()=>{
     }
 })
 audioElement.addEventListener('timeupdate',()=>{
-   
-    progress=parseInt((audioElement.currentTime/audioElement.duration)*100);
-    
-    myProgressBar.value=progress;
+       progress=parseInt((audioElement.currentTime/audioElement.duration)*100);
+       myProgressBar.value=progress;
 })
 
 myProgressBar.addEventListener('change',()=>{

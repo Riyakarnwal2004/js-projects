@@ -1,8 +1,5 @@
-
-
 let date= new Date;
 console.log(date)
-
 setInterval(function(){
     let a= new Date;
 let h=a.getHours();
